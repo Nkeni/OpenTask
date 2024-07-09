@@ -1,0 +1,8 @@
+### ADD A PLAYER
+
+POST http://localhost:2000/addplayer
+Content-Type: application/json
+
+{
+"name":"Xhaka"
+}
