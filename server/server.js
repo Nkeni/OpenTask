@@ -5,6 +5,8 @@ import cors from "cors";
 import createError from "http-errors";
 import connectDB from "./lib/db.js";
 import PlayeRouter from "./route/playeRouter.js";
+import DetailRouter from "./route/detailRouter.js";
+
 
 // Defining server
 const server = express();
@@ -27,6 +29,9 @@ server.use(cors());
 
 // Routes
 server.use("/addplayer", PlayeRouter);
+server.use("/detail", DetailRouter);
+
+
 
 
 // Page not found middleware

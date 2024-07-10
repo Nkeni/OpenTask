@@ -5,10 +5,10 @@ const { Schema, model } = mongoose;
 // Player Schema
 const playerSchema = new Schema(
   {
-    name: { type: String, required: true, trim: true },
+    name: { type: String, required: true},
      });
 
   // Player Model
-const Player = model("SoccerTeam", playerSchema);
+const Player = model("TeamPlayers", playerSchema);
 
 export default Player;
