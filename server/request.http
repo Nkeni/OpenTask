@@ -9,16 +9,19 @@ Content-Type: application/json
 ### GET ALL PLAYERS
 GET http://localhost:2000/addplayer
 
-### ADD A PLAYER DETAIL
+### ADD A PLAYER DETAILs
 POST http://localhost:2000/detail
 Content-Type: application/json
 
 {
-"playerName":"Xhaka",
+"playername":"Xhaka",
 "age":25,
 "games":100,
 "position":9
 }
 
-### GET PLAYER DETAIL
-GET http://localhost:2000/detail/:Xhaka
+### GET SPECIFIC PLAYER DETAIL
+GET http://localhost:2000/detail/Xhaka
+
+### GET ALL PLAYER DETAILs
+GET http://localhost:2000/detail
