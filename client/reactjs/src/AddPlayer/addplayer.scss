@@ -5,12 +5,16 @@ flex-direction: column;
 
 div{
     margin-bottom: 1rem;
+    
  label{
         font-weight: bolder;
         display: inline-block;
         width: 100px;
         text-align: right;
         margin-right: 1rem;
+        box-shadow: 10px 5px 5px black;
+        background-color: rgb(119, 116, 116);
+       
  }
 button{
     margin-left: 2rem;

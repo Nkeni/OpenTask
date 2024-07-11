@@ -3,14 +3,18 @@ import {useState, useRef } from "react";
 import './addplayer.scss'
 
 
+// The form Component to be added to the main page
 const FormComponent = () => {
     const [error, setErrors] = useState(null);
-    const nameInput = useRef();
+    const [player, setPlayer] = useState([]);
+
+  // Defining the form inputs
+  const nameInput = useRef();
   const ageInput = useRef();
   const gamesInput = useRef();
   const positionInput = useRef();
 
-  //^ add a player
+  // Add a player details to the database
   const submitHandler = (e) => {
     e.preventDefault();
 
@@ -46,6 +50,18 @@ const FormComponent = () => {
         setErrors(err);
         console.log(err);
       });
+
+      // You must fill in all inputs
+      if(!nameInput.current.value || !ageInput.current.value || !gamesInput.current.value || !positionInput.current.value ){
+      return alert("Fill in all the details please!")
+      }
+
+       // If the name already exists, dont save(not sure)
+       if(nameInput.current.value === player.playername){
+        return alert("Player already exists, next please!")
+        }
+
+        // After filling in, the input boxes should be empty
     nameInput.current.value = "";
     ageInput.current.value = "";
     gamesInput.current.value = "";

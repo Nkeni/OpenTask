@@ -1,5 +1,5 @@
 import PlayersList from './MainPage/Main';
-import './App.css';
+import './App.scss';
 import FormComponent from './AddPlayer/AddPlayer';
 
 function App() {

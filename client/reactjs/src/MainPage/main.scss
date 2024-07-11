@@ -2,12 +2,23 @@
     max-height: 50vh;
     margin-bottom: 5rem;
 
+    .detail-box{
+        width: 200px;
+        height: auto;
+        border: 1px solid rgb(47, 46, 46);
+        margin: 0.5rem auto;
+        background-color: white;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
     button{
         margin: 2rem;
         width: 100px;
         flex-wrap: wrap;
         border-radius: 1rem;
-        background-color: cyan;
+        background-color: white;
         font-weight: bolder;
+        box-shadow: 10px 5px 5px rgb(51, 50, 50);
     }
 }
